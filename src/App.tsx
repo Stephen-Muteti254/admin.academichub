@@ -8,14 +8,14 @@ import { ThemeProvider } from "next-themes";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
-import AdminClients from "./pages/admin/AdminClients";
-import AdminWriters from "./pages/admin/AdminWriters";
-import AdminPayments from "./pages/admin/AdminPayments";
-import AdminNotifications from "./pages/admin/AdminNotifications";
-import AdminSupport from "./pages/admin/AdminSupport";
-import AdminAnalytics from "./pages/admin/AdminAnalytics";
-import AdminApplications from "./pages/admin/AdminApplications";
-import AdminApplicationDetail from "./pages/admin/AdminApplicationDetail";
+import AdminClients from "./pages/AdminClients";
+import AdminWriters from "./pages/AdminWriters";
+import AdminPayments from "./pages/AdminPayments";
+import AdminNotifications from "./pages/AdminNotifications";
+import AdminSupport from "./pages/AdminSupport";
+import AdminAnalytics from "./pages/AdminAnalytics";
+import AdminApplications from "./pages/AdminApplications";
+import AdminApplicationDetail from "./pages/AdminApplicationDetail";
 
 import { RequireAuth } from '@/components/RequireAuth';
 import { AuthProvider } from "@/contexts/AuthContext";
