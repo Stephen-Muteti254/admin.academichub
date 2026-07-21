@@ -58,8 +58,7 @@ const App = () => (
 
                     {/* ================= ADMIN ================= */}
                     <Route element={<RequireAuth requiredRole={["admin", "super_admin"]} />}>
-                      <Route element={<EmailVerificationGuard />}>
-                        <Route path="/admin" element={<Lazy.AdminLayout />}>
+                        <Route path="/" element={<Lazy.AdminLayout />}>
                           <Route index element={<Navigate to="clients" replace />} />
                           {/*<Route path="clients" element={<AdminClients />} />*/}
                           <Route path="writers" element={<AdminWriters />} />
@@ -89,7 +88,6 @@ const App = () => (
 
                           <Route path="*" element={<Navigate to="clients" replace />} />
                         </Route>
-                      </Route>
                     </Route>
 
                   </Routes>
